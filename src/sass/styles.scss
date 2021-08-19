@@ -1,0 +1,359 @@
+$bg-color: #000000;
+$btn-color-primary: #a4161a;
+$btn-color-secondary: #4361ee;
+$border: #000055;
+$fc: white;
+$f4: 20px;
+$f6: 12px;
+$f1: 120px;
+$ff: "Montserrat", sans-serif;
+
+.white { color: white; }
+
+.max-container {
+	background-color: $bg-color;
+	width: 100vw;
+	height: 100vh;
+}
+
+a {
+	text-decoration: None;
+	color: $fc;
+}
+
+nav {
+	color: $fc;
+	font-family: $ff;
+	font-size: $f4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	background-color: $bg-color;
+	box-shadow: 0 10px 5px $bg-color;
+	ul {
+		margin: 0;
+
+		li {
+			list-style: None;
+			display: inline;
+			padding: 0 20px;
+			.link {
+				text-decoration: None;
+				color: $fc;
+			}
+		}
+		li:hover {
+			cursor: pointer;
+			opacity: 0.6;
+		}
+	}
+}
+
+footer {
+	background-color: $bg-color;
+	color: $fc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: $ff;
+	font-weight: 200;
+	font-size: $f6;
+	padding: 5rem 3rem;
+	text-align: center;
+	box-shadow: 0 -10px 5px $bg-color;
+	div {
+		p {
+			width: 60vw;
+			margin-bottom: 2rem;
+		}
+	}
+	i {
+		margin: 10px 10px;
+	}
+	i:hover {
+		opacity: 0.6;
+		cursor: pointer;
+	}
+}
+
+.homePage {
+	width: 100vw;
+	height: 100vh;
+	background: url(img/beserk.jpg);
+	background-repeat: repeat-x;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	div {
+		text-align: center;
+
+		h1 {
+			font-family: $ff;
+			font-size: $f1;
+			font-weight: 700;
+			text-align: center;
+			color: $fc;
+			letter-spacing: 10px;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			transition: linear 0.3s;
+		}
+		p {
+			font-family: $ff;
+			font-size: 17px;
+			font-weight: 200;
+			text-align: center;
+			color: $fc;
+			width: 60vw;
+			margin-bottom: 4rem;
+		}
+		a {
+			font-family: $ff;
+			font-size: $f4;
+			font-weight: 500;
+			color: $fc;
+			background-color: $btn-color-primary;
+			border: 2px $btn-color-primary;
+			padding: 0.7rem 3rem;
+			border-radius: 30px;
+			margin-top: 30px;
+			box-shadow: 0 2px 5px $btn-color-primary;
+			transition: linear 0.1s;
+		}
+		a:hover {
+			background-color: $btn-color-secondary;
+			box-shadow: 0 2px 5px $btn-color-secondary;
+			transition: linear 0.1s;
+		}
+		a:active {
+			background-color: $btn-color-secondary;
+			box-shadow: 0 0 $btn-color-secondary;
+			position: relative;
+			top: 2px;
+			transition: linear 0.1s;
+		}
+	}
+}
+
+.loading {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-size: 100px;
+		color: white;
+		font-family: $ff;
+	}
+}
+
+.notFound {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10rem 0.5rem;
+	text-align: center;
+	.link {
+		font-size: 50px;
+		text-decoration: None;
+		color: white;
+		font-family: $ff;
+	}
+	.link:hover {
+		opacity: 0.6;
+	}
+	h1 {
+		color: $fc;
+		font-size: $f1;
+		margin: 0;
+		font-family: $ff;
+	}
+}
+
+.adventure-container {
+	p {
+		color: $fc;
+		font-size: $f4;
+		font-family: $ff;
+	}
+	.adventure {
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+		color: $fc;
+		font-family: $ff;
+		display: flex;
+		.cont-1 {
+			width: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 80%;
+				height: auto;
+				border-radius: 2rem;
+			}
+		}
+		.cont-2 {
+			width: 40%;
+			h2 {
+				font-size: 40px;
+				font-weight: 700;
+			}
+		}
+		.cont-3 {
+			width: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			flex-direction: column;
+			div {
+				padding-left: 2rem;
+				ul {
+					padding-left: 0;
+					li {
+						list-style: None;
+					}
+				}
+			}
+		}
+	}
+}
+
+.form-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 2rem;
+	padding-left: 6rem;
+	padding-right: 6rem;
+	color: white;
+	i:hover {
+		cursor: pointer;
+		opacity: 0.6;
+	}
+}
+
+.form-adventure {
+	position: absolute;
+	width: 100vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: $border;
+	
+	form {
+		width: 40%;
+		background-color: $bg-color;
+		color: $fc;
+		font-family: $ff;
+		border-radius: 1rem;
+		padding: 2rem;
+		margin-top: 2rem;
+		div {
+			width: 100%;
+			margin: 10px 0;
+			input {
+				width: 90%;
+				padding: 10px 20px;
+				border-radius: 10px;
+				font-size: 20px;
+			}
+			textarea {
+				width: 90%;
+			}
+		}
+	}
+}
+
+/* Mobile first */
+@media all and (max-width: 480px) {
+	.homePage {
+		background: url(img/beserk-mobile.jpg);
+		div {
+			h1 {
+				font-size: 55px;
+			}
+			p {
+				font-size: 14px;
+				margin: 5rem 10vw;
+			}
+		}
+	}
+	.loading {
+		h1 {
+			font-size: 50px;
+		}
+	}
+	.notFound {
+		h1 {
+			font-size: 40px;
+		}
+		.link {
+			font-size: 20px;
+		}
+	}
+	.adventure-container {
+		.adventure {
+			flex-direction: column;
+			align-items: center;
+			box-shadow: inset 0 0 5px white;
+			.cont-1 {
+				width: 100%;
+			}
+			.cont-2 {
+				width: 100%;
+				p {
+					padding: 0 1rem;
+				}
+				h2 {
+					padding: 0 1rem;
+				}
+			}
+			.cont-3 {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* Tablet */
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.homePage {
+		background: url(img/beserk-tablet.jpg);
+		div {
+			h1 {
+				font-size: 80px;
+			}
+			p {
+				margin: 5rem 10vw;
+			}
+		}
+	}
+	.notFound {
+		h1 {
+			font-size: 60px;
+		}
+		.link {
+			font-size: 40px;
+		}
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.notFound {
+		h1 {
+			font-size: 80px;
+		}
+	}
+}
